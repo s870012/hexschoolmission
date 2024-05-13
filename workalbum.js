@@ -1,0 +1,9 @@
+$(function(){
+    $('.btn').click(function(){
+        $('.btn').toggleClass('.menu')
+        $('.burger').toggleClass('close')
+        $('.closure').toggleClass('close')
+        $('.menu').toggleClass('close')
+        $('.menu-bg').toggleClass('close')
+    })
+})

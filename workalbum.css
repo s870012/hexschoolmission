@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 24px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+*,*::after,*::before{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* header */
+.header-bg{
+    height: 96px;
+    border-bottom: 1px solid #F1F1F1;
+    display: flex;
+    align-items: center;
+    padding: 32px 16.5%;
+    gap: 20%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #FFFFFF;
+}
+.logo{
+    max-width: 100%;
+    height: 40px;
+}
+.burger{
+    display: none;
+}
+.close{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.menu li{
+    padding: 4px 8px;
+}
+.menu li a{
+    color: #000000;
+}
+.menu li a:hover{
+    border-image-source: radial-gradient(60% 60%, transparent 0px, transparent 100%, #919191 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-image-outset: 5px;
+    font-weight: 600;
+}
+.menu-bg{
+    position: fixed;
+    background: rgb(0,0,0,70%);
+    width: 100%;
+    height: 100%;
+}
+/* section */
+.banner-bg{
+    background: #FAFAFA;
+    padding: 176px 0 80px;
+}
+.banner-bg h2{
+    max-width: 528px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #1E1E1E;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-bg span{
+    display: inline-block;
+    background-image: url("pic/Vector.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+.comma-up{
+    margin-left: 32.5%;
+    max-width: 72px;
+}
+.comma-down{
+    margin-left: 65.5%;
+    max-width: 72px;
+}
+.banner-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.banner-list h3{
+    text-align: center;
+    background-image: url("pic/Line\ 45.png");
+    background-repeat:no-repeat ;
+    background-position: center bottom;
+    margin-bottom: 12px;
+    color: #5B5B5B;
+}
+.banner-list p{
+    text-align: center;
+    color: #3B3B3B;
+    max-width: 298px;
+}
+
+/* main */
+.main-bg{
+    padding: 120px 0;
+}
+.works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.works img{
+    display: block;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.works h2, .works a{
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #3B3B3B;
+}
+.works p{
+    color: #919191;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.work-tags{
+    display: flex;
+    gap: 16px;
+}
+.work-tags li{
+    background: #F1F1F1;
+    border-radius: 16px;
+    padding: 4px 12px;
+}
+.works .work-tags a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #3b3b3b;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 72px auto 0 auto;
+}
+.pagination a{
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    padding: 2px 13px;
+    display: block;
+    color: #3B3B3B;
+}
+.pagination a:active{
+    background: #1E1E1E;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+/* footer */
+.footer-bg{
+    border-top: 1px solid #F1F1F1;
+    background: #FAFAFA;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+    background-repeat: no-repeat;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.footer-about img{
+    display: block;
+    max-width: 120px;
+    height: 54px;
+}
+.footer-about p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #3B3B3B;
+    margin: 24px 0;
+}
+.footer-about a{
+    color: #919191 ;
+    font-size: 20px;
+    word-break: break-all;
+}
+.social .social-form{
+    background: #000000;
+    padding: 8px 24px;
+    border: 1px #000000 solid;
+    border-radius: 8px;
+}
+.social .social-form a{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.social li{
+    width: 306px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+    padding: 8px 24px;
+    border: 1px #C1C1C1 solid;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.social li a{
+    color: #3B3B3B;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    word-break: break-all;
+}
+
+@media(max-width:1072px){
+    .header-bg{
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .menu{
+        gap: 10px;
+    }
+    .comma-up{
+        margin-left: 20%;
+    }
+    .comma-down{
+        margin-left: 75%;
+    }
+}
+
+@media(max-width:767px){
+    .header-bg{
+        height: 56px;
+        padding: 8px 12px;
+        justify-content: space-between;
+    }
+    .burger{
+        display: block;
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+    .menu{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 56px;
+        gap: 24px;
+        width: 100%;
+        background:#FFFFFF;
+        padding: 40px 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .menu li{
+        text-align: center;
+    }
+    .close{
+        display: none;
+    }
+    /* selection */
+    .banner-bg{
+        padding: 96px 24px 80px;
+    }
+    .banner-bg h2{
+        font-size: 20px;
+        max-width: 300px;
+    }
+    .comma-up{
+        margin: 0 auto;
+    }
+    .banner-bg .slogan{
+        margin-bottom: 40px;
+    }
+    .comma-down{
+        display: none;
+    }
+    .banner-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .banner-list li{
+        max-width: 235px;
+    }
+    .banner-bg h3{
+        margin-bottom: 8px;
+    }
+    /* main */
+    .main-bg{
+        padding: 80px 12px;
+    }
+    .works{
+        gap: 48px;
+    }
+    .works a{
+        font-size: 20px;
+        margin-left: 28px;
+    }
+    .works p{
+        margin-bottom: 16px;
+        margin-left: 7.5%;
+        max-width: 319px;
+    }
+    .work-tags{
+        gap: 8px;
+        margin-left: 16px;
+    }
+    .works .work-tags a{
+        font-size: 16px;
+        margin-left: 0;
+        word-break: break-all;
+    }
+    .pagination{
+        margin-top: 48px;
+        gap: 16px;
+    }
+    /* footer */
+    .footer-bg{
+        background-image: url("pic/footer-bg-sm.png");
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .footer-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footer-about img{
+        margin: 0 auto;
+    }
+    .footer-about p{
+        text-align: center;
+    }
+    .social li{
+        width: 100%;
+        word-break: break-all;
+        height: 64px;
+    }
+}
+
