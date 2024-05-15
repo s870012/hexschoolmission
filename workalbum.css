@@ -126,7 +126,7 @@ img{
 }
 .banner-bg span{
     display: inline-block;
-    background-image: url("pic/Vector.png");
+    background-image: url("pic/mark.png");
     background-repeat: no-repeat;
     background-position:bottom;
 }
@@ -277,7 +277,7 @@ img{
     word-break: break-all;
 }
 
-@media(max-width:1072px){
+@media(max-width:1316px){
     .header-bg{
         justify-content: space-around;
         gap: 10px;
@@ -290,6 +290,9 @@ img{
     }
     .comma-down{
         margin-left: 75%;
+    }
+    .works-list{
+        width:  48%;
     }
 }
 
@@ -357,6 +360,9 @@ img{
     }
     .works{
         gap: 48px;
+    }
+    .works-list{
+        width: auto;
     }
     .works a{
         font-size: 20px;
