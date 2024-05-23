@@ -19,7 +19,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -145,7 +144,8 @@ img{
 
 /* service */
 .service-bg{
-    padding: 216px 0;
+    padding-top: 216px;
+    padding-bottom: 120px;
 }
 .item-container{
     margin: 0 auto;
@@ -179,9 +179,7 @@ img{
 
 /* workflow */
 .workflow-bg{
-    background-image: url("pic/service-item-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:linear-gradient(135deg,#000000 50%, #1E1E1E 0);
     padding: 120px 0;
 }
 .workflow-container{
@@ -436,7 +434,7 @@ img{
     }
     /* service */
     .service-bg{
-        padding-top: 176px;
+        padding-top: 96px;
     }
     .item-container{
         width: 100%;
@@ -446,15 +444,46 @@ img{
         width: 40%;
     }
     /* workflow */
+    .workflow-bg{
+        padding: 80px 0;
+    }
     .workflow-steps{
         width: 80%;
     }
+    .num{
+        margin: 0;
+    }
     /* charge-item */
-    
+    .charge-container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .charge-item{
+        justify-content: center;
+    }
+    /* question */
+    .question-container{
+        max-width: 80%;
+        gap: 16px;
+    }
+    .question{
+        width: 100%;
+        border: 1px solid #E9E9E9;
+        border-radius: 8px;
+        padding: 24px;
+    }
+    .question h3{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .question p{
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 0;
+    }
 }
 
-
-@media(max-width:414px){
+@media(max-width:767px){
     /* title */
     .title{
         display: none;
@@ -465,13 +494,60 @@ img{
         align-items: center;
         gap: 16px;
         font-size: 24px;
-        margin: 40px auto;
+        margin-bottom: 40px;
         font-weight: 700;
         line-height: 28.8px;
         color: #3B3B3B;
     }
+    .title-W{
+        display: none;
+    }
+    .m-title-W{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        font-size: 24px;
+        margin: 40px auto;
+        font-weight: 700;
+        line-height: 28.8px;
+        color: #FFFFFF;
+    }
     .item li{
         width: 100%;
+    }
+    /* workflow */
+    .workflow-steps{
+        flex-direction: column;
+        padding: 24px 24px 48px 24px;
+    }
+    .content-box h2{
+        text-align: center;
+    }
+    /* charge */
+    .charge-bg{
+        padding: 80px 27px;
+    }
+    .charge-item{
+        padding: 24px 12px;
+    }
+    .charge-item h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .charge-item p{
+        font-size: 20px;
+    }
+    .charge-item img{
+        width: 30px;
+        margin: 0;
+    }
+    .charge-item hr{
+        width: 28px;
+    }
+    /* works */
+    .works-bg{
+        padding: 80px 12px;
     }
     /* footer */
     .footer-bg{
