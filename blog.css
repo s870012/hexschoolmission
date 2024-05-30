@@ -70,6 +70,7 @@ img{
     gap: 20%;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 9999;
     background-color: #FFFFFF;
@@ -183,7 +184,7 @@ img{
     color: #3B3B3B;
 }
 .article-list{
-    padding: 80px 0 0 80px;
+    padding: 80px;
     background-color: #FAFAFA;
 }
 .article-list li{
