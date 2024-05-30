@@ -59,7 +59,7 @@ img{
     font-variation-settings:"wdth" 100;
 }
 .wrap{
-    max-width: 1920px;
+    max-width: 1296px;
     margin: 0 auto;
 }
 /* header */
@@ -450,9 +450,7 @@ img{
     .workflow-steps{
         width: 80%;
     }
-    .num{
-        margin: 0;
-    }
+
     /* charge-item */
     .charge-container{
         flex-direction: column;
@@ -520,6 +518,9 @@ img{
     .workflow-steps{
         flex-direction: column;
         padding: 24px 24px 48px 24px;
+    }
+    .num{
+        margin: 0;
     }
     .content-box h2{
         text-align: center;
