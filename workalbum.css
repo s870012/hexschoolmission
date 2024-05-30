@@ -167,6 +167,9 @@ img{
     justify-content: center;
     gap: 24px;
 }
+.works-list{
+    width: 48%;
+}
 .works img{
     display: block;
     border: 1px solid #F1F1F1;
@@ -277,7 +280,7 @@ img{
     word-break: break-all;
 }
 
-@media(max-width:1316px){
+/* @media(max-width:1316px){
     .header-bg{
         justify-content: space-around;
         gap: 10px;
@@ -294,9 +297,9 @@ img{
     .works-list{
         width:  48%;
     }
-}
+} */
 
-@media(max-width:767px){
+@media(max-width:996px){
     .header-bg{
         height: 56px;
         padding: 8px 12px;

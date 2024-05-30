@@ -162,7 +162,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     width: 16%;
-    height: 306px;
+    height: 206px;
     /* background: linear-gradient(135deg,#000000 50%,#1E1E1E 50%) ; */
     border-radius: 16px;
     display: flex;
@@ -230,7 +230,7 @@ img{
 
 /* charge */
 .charge-bg{
-    padding: 120px;
+    padding: 120px 10px;
 }
 .charge-container{
     display: flex;
@@ -242,7 +242,7 @@ img{
     align-items: center;
     background-color: #FAFAFA;
     border-radius: 8px;
-    padding: 32px;
+    padding: 28px;
     box-shadow: 0 4px rgb(0, 0, 0, 8%);
 }
 .charge-item img{
@@ -281,6 +281,9 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+}
+.works-list{
+    width: 48%;
 }
 .works img{
     display: block;
