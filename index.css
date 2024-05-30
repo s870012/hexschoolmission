@@ -337,12 +337,13 @@ img{
 }
 
 /* article */
+.article-bg{
+    padding: 0 0 120px 0;
+}
 .article-container{
-    display: flex;
-    justify-content: center;
     gap: 24px;
     width: 67.5%;
-    margin: 0 auto 120px auto;
+    margin: 0 auto 40px auto;
 }
 .article-container li{
     width: 32.1%;

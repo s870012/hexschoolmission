@@ -7,3 +7,13 @@ $(function(){
         $('.menu-bg').toggleClass('close')
     })
 })
+
+const swipet= new Swiper('.swiper',{
+    pagination:{
+      el:'.swiper-pagination',
+      clickable:true,
+    },
+    slidesPerView:3 ,
+    spaceBetween:24 ,
+    
+  });
