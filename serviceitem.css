@@ -584,3 +584,9 @@ img{
         height: 64px;
     }
 }
+
+@media(max-width:414px){
+    .item-container{
+        width: 90%;
+    }
+}
