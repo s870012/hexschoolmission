@@ -754,7 +754,7 @@ img{
     }
 }
 
-@media(max-width:375px){
+@media(max-width:500px){
     .banner-pic-lg{
         display: none;
     }
@@ -767,12 +767,6 @@ img{
     }
     .tags{
         max-width: 260px;
-    }
-    .m-app-bg{
-        display: none;
-    }
-    .m-app-img{
-        display: block;
     }
     .item-container{
         padding: 0;
@@ -790,5 +784,13 @@ img{
     }
     .article-container li{
         width: 100%;
+    }
+}
+@media(max-width:375px){
+    .m-app-bg{
+        display: none;
+    }
+    .m-app-img{
+        display: block;
     }
 }
