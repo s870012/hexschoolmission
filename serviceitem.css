@@ -554,6 +554,9 @@ img{
     .works-bg{
         padding: 80px 12px;
     }
+    .works-list{
+        width: 100%;
+    }
     /* footer */
     .footer-bg{
         background-image: url("pic/footer-bg-sm.png");

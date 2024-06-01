@@ -9,11 +9,20 @@ $(function(){
 })
 
 const swipet= new Swiper('.swiper',{
-    pagination:{
-      el:'.swiper-pagination',
-      clickable:true,
-    },
-    slidesPerView:3 ,
-    spaceBetween:24 ,
-    
-  });
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  grid: {
+    rows: 3,
+  },
+  breakpoints: {
+    992: {      
+      grid: { 
+        rows: 1,
+      },
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
+  }
+});
